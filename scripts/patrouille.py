@@ -3,7 +3,7 @@ import rospy
 import math
 
 import traceback
-impost sys
+import sys
 from simple_navigation_goals import simple_navigation_goals
 
 if __name__ == "__main__":
