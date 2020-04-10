@@ -4,8 +4,17 @@ _[![ROS Melodic](https://img.shields.io/badge/ROS-Melodic-red)](http://wiki.ros.
 
 ![MelodicTurtle](https://raw.githubusercontent.com/ros/ros_tutorials/melodic-devel/turtlesim/images/melodic.png)
 
+>The goal of this projet is to succeed a simplified version of the "Carry my luggage" test, imagined by the [RobotCup@Home](https://athome.robocup.org) contest.
 
-> This project contains a ROS package that allows a turtlebot3 to be controlled from several python scripts via simple coordinates.
+>For more information about rules and regulations, please refer to [this document](https://robocupathome.github.io/RuleBook/rulebook/master.pdf).
+
+- [Simple Navigation Goal](#simple-navigation-goal)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [How To](#how-to)
+  - [Usage](#usage)
+  - [Meta](#meta)
+  - [Contributing](#contributing)
 
 ## Prerequisites
 
@@ -24,8 +33,14 @@ $ git clone https://github.com/SamuelHuet/simple_navigation_goals.git
 ## How To
 
 ```
-$ rosrun patrouille.py
+$ rosrun simple_navigation_goals patrouille.py
 ```
+
+## Usage
+
+The project contains a complete ROS Melodic package with several python scripts. The ``simple_navigation_goals.py`` script is executed with the ``patrouille.py script`` in order to realize all necessary tests required to pass the challenge.
+
+In order to pass the test, the TurtleBot have to patrol with three checkpoints. The checkpoints will be drawn randomly but can be modified in order to approach the simulation towards the physical reality.
 
 ## Meta
 
