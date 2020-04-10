@@ -25,10 +25,12 @@ _[![ROS Melodic](https://img.shields.io/badge/ROS-Melodic-red)](http://wiki.ros.
 
 ## Installation
 
-Simply clone this repository on your computer :
+Simply clone this repository on your computer and catkin_make:
 ```
 $ cd ~/catkin_ws/src
 $ git clone https://github.com/SamuelHuet/simple_navigation_goals.git
+$ cd ..
+$ catkin_make
 ```
 
 ## How To
