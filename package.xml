@@ -1,19 +1,22 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>goto</name>
-  <version>0.0.0</version>
+  <name>simple_navigation_goals</name>
+  <version>0.0.3</version>
   <description>The goto package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
   <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
   <maintainer email="contact@huetsamuel.fr">Samuel Huet</maintainer>
+  <maintainer email="thomas.coutant@ynov.com">Thomas Coutant</maintainer>
+  <maintainer email="guerrybryan@gmail.com">Bryan Guerry</maintainer>
+  <maintainer email="sebastien.four@ynov.com">Sebastien Four</maintainer>
 
 
   <!-- One license tag required, multiple allowed, one license per tag -->
   <!-- Commonly used license strings: -->
   <!--   BSD, MIT, Boost Software License, GPLv2, GPLv3, LGPLv2.1, LGPLv3 -->
-  <license>MIT</license>
+  <license>Apache 2</license>
 
 
   <!-- Url tags are optional, but multiple are allowed, one per tag -->
@@ -26,6 +29,9 @@
   <!-- Authors do not have to be maintainers, but could be -->
   <!-- Example: -->
   <author email="contact@huetsamuel.fr">Samuel Huet</author>
+  <author email="thomas.coutant@ynov.com">Thomas Coutant</author>
+  <author email="guerrybryan@gmail.com">Bryan Guerry</author>
+  <author email="sebastien.four@ynov.com">Sebastien Four</author>
 
 
   <!-- The *depend tags are used to specify dependencies -->
@@ -49,13 +55,13 @@
   <!-- Use doc_depend for packages you need only for building documentation: -->
   <!--   <doc_depend>doxygen</doc_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
-  <build_depend>roscpp</build_depend>
+  <!-- <build_depend>roscpp</build_depend> -->
   <build_depend>rospy</build_depend>
   <build_depend>std_msgs</build_depend>
-  <build_export_depend>roscpp</build_export_depend>
+  <!-- <build_export_depend>roscpp</build_export_depend> -->
   <build_export_depend>rospy</build_export_depend>
   <build_export_depend>std_msgs</build_export_depend>
-  <exec_depend>roscpp</exec_depend>
+  <!-- <exec_depend>roscpp</exec_depend> -->
   <exec_depend>rospy</exec_depend>
   <exec_depend>std_msgs</exec_depend>
 
