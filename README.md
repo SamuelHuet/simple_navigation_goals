@@ -25,20 +25,32 @@ _[![ROS Melodic](https://img.shields.io/badge/ROS-Melodic-red)](http://wiki.ros.
 
 ## Installation
 
-Simply clone this repository on your computer : 
+Simply clone this repository on your computer :
 ```
+$ cd ~/catkin_ws/src
 $ git clone https://github.com/SamuelHuet/simple_navigation_goals.git
 ```
 
 ## How To
 
+patrol points tested and working on turtlebot3_world
 ```
 $ rosrun simple_navigation_goals patrouille.py
 ```
+Or you can run
+```
+import simple_navigation_goals
+rospy.init_node("test_scenario")
+nav_goals = simple_navigation_goals.SimpleNavigationGoals()
 
+nav_goals.go_to(x, y, rad)
+
+rospy.on_shutdown(nav_goals._shutdown)
+rospy.spin()
+```
 ## Usage
 
-The project contains a complete ROS Melodic package with several python scripts. The ``simple_navigation_goals.py`` script is executed with the ``patrouille.py script`` in order to realize all necessary tests required to pass the challenge.
+The project contains a complete ROS Melodic package with several python scripts. The ``simple_navigation_goals.py`` script is executed with the ``patrouille.py`` script in order to realize all necessary tests required to pass the challenge.
 
 In order to pass the test, the TurtleBot have to patrol with three checkpoints. The checkpoints will be drawn randomly but can be modified in order to approach the simulation towards the physical reality.
 
