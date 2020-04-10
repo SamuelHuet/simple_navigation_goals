@@ -33,11 +33,11 @@ $ git clone https://github.com/SamuelHuet/simple_navigation_goals.git
 
 ## How To
 
-patrol points tested and working on turtlebot3_world
+Patrol points tested and working on turtlebot3_world
 ```
 $ rosrun simple_navigation_goals patrouille.py
 ```
-Or you can run
+Or you can run in your own python script
 ```
 import simple_navigation_goals
 rospy.init_node("test_scenario")
